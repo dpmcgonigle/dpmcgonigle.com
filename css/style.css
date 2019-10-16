@@ -1,0 +1,262 @@
+* {
+	
+	box-sizing: border-box;  /*default is "content-box", whose size is affected by the padding and border thickness.  border-box is not*/
+	margin: 0;
+	padding: 0;
+	
+	/* This is for testing window size 
+	box-shadow:0px 0px 0px 3px black inset;*/
+}
+
+body {
+	/*vh and vw are percentages of the viewport window height and width, respectively*/
+	height: 100vh;  
+	width: 100vw;
+	overflow: hidden;
+}
+
+#imgStartupLogo {
+	position: absolute; 
+	top: 50%;
+	left: 50%;
+	display: none;
+	z-index: 1;
+}
+
+.pageWrapper {
+	position: relative;
+	height: 100%;
+	width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.myNavbar {
+	position: relative;
+	top: 0px;
+	width=100%;
+	height: 15%;
+	min-height: 80px;
+	overflow: hidden;
+}
+
+.logo {
+  display: inline-block;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  max-height: 100%;
+  float: left;
+}
+
+/*navigation bar*/
+ul.nav {
+	display: relative;		
+	top: 0px;
+	height: 100%;
+	list-style-type: none;
+}
+
+li.navbtn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	padding: 0px 20px;
+	float: left;
+}
+
+#dropdown-content {
+	display: none;
+    position: absolute;
+	left: 62%;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	font-size: 2em;
+    z-index: 2;
+}
+
+#dropdown-content a:hover {background-color: #f1f1f1}
+
+.mainContent {
+	position: absolute;
+	bottom: 0px;
+	height: 85%;
+	width: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+	word-wrap: break-word;
+}
+
+.carousel {
+	margin: auto;
+}
+
+.carousel-inner {
+	margin: auto;
+	width: 90%;
+	max-height: 50vh;
+}
+
+.carousel-inner>.item {
+    -webkit-transition: 0.9s ease-in-out left;
+    transition: 0.9s ease-in-out left;
+    -webkit-transition: 0.9s, ease-in-out, left;
+    -moz-transition: .9s, ease-in-out, left;
+    -o-transition: .9s, ease-in-out, left;
+    transition: .9s, ease-in-out, left;
+}
+
+#modernize {
+	font-family: 'Cabin Sketch', cursive;
+	color: black;
+}
+
+#modernize .title {
+	position: absolute;
+	top: 0%;
+	left: 30%;
+	z-index: 2;
+}
+
+#modernize .caption {
+	position: absolute;
+	top: 25%;
+	left: 15%;
+	z-index: 2;
+}
+
+#connect {
+	font-family: 'Permanent Marker', cursive;
+	color: white;
+}
+
+#connect .title {
+	position: absolute;
+	left: 65%;
+	top: 5%;
+	z-index: 2;
+}
+
+#connect .caption {
+	position: absolute;
+	top: 40%;
+	left: 65%;
+	z-index: 2;
+}
+
+#maximize {
+	font-family: 'Righteous', cursive;
+	color: white;
+}
+
+#maximize .title {
+	position: absolute;
+	top: 0%;
+	left: 30%;
+	z-index: 2;
+}
+
+#maximize .caption {
+	position: absolute;
+	top: 70%;
+	left: 5%;
+	z-index: 2;
+}
+
+.title {
+	font-size: 5.5em;
+}
+
+.caption {
+	font-size: 3.5em;
+}
+	
+.carousel-inner img {
+  max-width:100%; 
+  max-height:100%;
+  margin:auto;
+  display:block;
+}
+
+.welcome {
+	width: 100%;
+	font-family: "Times New Roman", Times, serif;
+}
+
+.contentRow {
+	display: flex;
+	min-height: 200px;
+	width: 80%;
+}
+
+.smallCol {
+	display: inline-block;
+	width: 20%;
+	height: 100%;
+}
+
+.largeCol {	
+	display: inline-block;
+	width: 70%;
+}
+
+.bullet {
+	display: flex;
+	height: 100%;
+	min-height: 200px;
+}
+
+.bullet img {
+	vertical-align: middle;
+	height: 100px;
+	width: 100px;
+	margin: auto;
+}
+
+.titleClass {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 900;
+	font-size: 2.5em;
+}
+
+.contentText {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 1.5em;	
+}
+
+.contact {
+	overflow-y: auto;
+	height: 85%;
+	width: 100%;
+	display: none;
+	position: absolute;
+	bottom: 0px;
+}
+
+
+.contactBackground {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	background-image: url("../img/tacticalbg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	z-index: 1;
+}
+
+.contactText {
+	position: absolute;
+	top: 10%;
+	left: 5%;
+	width: 90%;
+	font-size: 1.7em;
+	font-family: 'Black Ops One', cursive, serif;
+	background: rgba(0, 0, 0, 0.5); 
+	color: white;
+	z-index: 2;
+}

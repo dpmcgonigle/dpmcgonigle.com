@@ -1,11 +1,15 @@
 # dpmcgonigle.com
 
-LAMP stack website for marketing myself.
+## About
 
-This website was designed using PHP files as building blocks to create each page, which can be navigated using the menu at the top of the screen.
+[LAMP (Linux, Apache, MySql, PHP)](https://www.ibm.com/cloud/learn/lamp-stack-explained) stack website for web design (incomplete).  Makes use of Bootstrap4 CSS, javascript and jQuery.
 
-There is one CSS style sheet and one javascript include, and there are a number of PHP files for connecting to the database on Bluehost and querying data.
+![Landing Page][img/screenshot.png]
 
-Website has been tested on Google Chrome, Microsoft Internet Explorer 11, Microsoft Edge, and Mozilla Firefox.
+Website has been tested on Google Chrome, Microsoft Internet Explorer 11, Microsoft Edge, and Mozilla Firefox, and should be able to run locally on a machine with phpmyadmin or XAMPP, or similar software for creating a local server on your machine.
 
-Visit www.dpmcgonigle.com
+## Note
+
+Note that the website is incomplete, as my original plan to build websites for businesses conflicted with the lack of time I had available to build said websites.  
+
+Visit [www.dpmcgonigle.com] if it is still up, or shoot me an email at dpmcgonigle@gmail.com!

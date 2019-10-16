@@ -2,61 +2,44 @@
 /*
 *
 *		tail.php
-*		Last updated 5/20/2018
+*		Last updated 7/15/2018
 *		Daniel McGonigle
-*		This php include file creates the contact form and footer for each web page
+*		This php file closes out the tags
+*		Tags to close open: html, body, div.container-fluid pageWrapper, div.col-sm-8 contentDiv
 *
 */
 ?>
-					<div class="form">  <!--begin form-->
-						<form action="processWebform.php" method="post" id="contactForm">
-              
-							<center>
-							<div class="formName">
-								Name:
-								<input type="text" name="name">
-							</div>
-              
-							<div class="formEmail">
-								Email:
-								<input type="text" name="email">
-							</div>
-							
-							<div class="formMessage">
-								Message:<br>
-								<textarea rows=5 cols=100 form="contactForm" name="message"></textarea>
-							</div>
-							
-							<div class="formSubmit">
-								<input type="submit" value="Submit">
-								<button class="formClear"><p>Clear Form</p></button>
-							</div>
-							
-							</center>
-							
-            </form> 
-					</div>  <!--end form-->
-					
-					
-				</div>  <!--end mainContent-->
-			
-				<div class="contactBanner">
-					<img src="img/up.png">
-					<img src="img/up.png">
-					<h1 class="font-effect-outline">contact</h1>
-
+			<div class="contact">
+				<div class="contactBackground">
+					<center>
+						<div class="contactText">
+							<p>
+							dpmcgonigle@gmail.com
+							<br>
+							(757) 401-7581
+							<br>
+							Dan McGonigle is a sofware engineer in Southern Mississippi.  He graduated from the University of Southern 
+							Mississippi with a 4.0 Grade Point Average, and has worked on programs for the Departments of the Air 
+							Force and Navy since 2007.  
+							<br><br>
+							In 2017, Dan was sent to prison by a military court for a crime he didn't commit. 
+							He promptly escaped from a maximum security stockade to the Los Angeles underground. Today, 
+							still wanted by the government he survives as a soldier of fortune. If you have a problem, if no one 
+							else can help, and if you can find him....maybe you can hire Dan McGonigle.
+							<br><br>
+							dpmcgonigle@gmail.com
+							<br>
+							(757) 401-7581
+							</p>
+						</div>
+					</center>
 				</div>
-			
-				<footer>
-
-					<h3 class="font-effect-outline" id="footerText">Last updated: April 8, 2018.  Site visitors: <?php include 'php/counter.php'; ?>	</h3>
-					<p>Whether you think you can or you think you can’t, you’re right. —Henry Ford</p>
-				</footer>		
-			
-			</div>   <!--	end content area-->
-			
-		</div>		<!--	end pageWrapper	-->
+			</div>
+		<!-- END div.container pageWrapper -->
+		</div>
 		
+		<img src="img/logo_shape.png" id="imgStartupLogo">
+
 	</body>
 
 </html>
